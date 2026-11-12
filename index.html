@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web belajar html,css,js</title>
+    <!-- untuk manggil style css nya -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Xhirara</h1>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#project">Proyek</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <h1>WELCOME, <span>TO MY PORTOFOLIO</span></h1>
+        <p>Hello, my name Muhamad Yusri,My major is informatic engineering</p>
+        <button onclick="scrollToContact()">contact me</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>Saya adalah web developer yang sedang belajar tentang membuat website portofolio mengguunakan html, css, dan javascript.</p>
+    </section>
+
+    <section id="project" class="section">
+        <h2>Project</h2>
+        <!-- <p>beberapa projek yang sudah saya pelajari</p> -->
+
+        <div class="project-list">
+            <div class="card">
+                <h3>belajar html</h3>
+                <p>proses saat sedang belajar membuat html</p>
+            </div>
+
+            <div class="card">
+                <h3>belajar css</h3>
+                <p>proses saat sedang belajar membuat css</p>
+            </div>
+
+            <div class="card">
+                <h3>belajar javascript</h3>
+                <p>proses saat sedang belajar membuat javasript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Kontak Saya</h2>
+
+        <form id="contactform">
+            <input type="text" placeholder="Masukan Nama" required/>
+            <input type="email" placeholder="Masukan Email" required/>
+            <textarea placeholder="Tulis Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+
+        </form>
+
+        <p id="message" class="message"></p>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 portofolio muhamad yusri ADIOS</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

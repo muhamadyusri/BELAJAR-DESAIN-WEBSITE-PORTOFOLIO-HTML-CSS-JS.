@@ -1,0 +1,148 @@
+/* universal selector fungsinya itu untuk semua elemen html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* bagian body */
+body {
+    background: whitesmoke;
+    /* color untuk semua teks yang ada di bagian body mengubah semua teks menjadi warna hitam */
+    color: black;
+}
+
+/* bagian navbar atau navigation */
+nav {
+    /* display flex agar navigasi nya nya lurus sejajar horizontal */
+    display: flex;
+    /* justify content untuk mengatur posisi logo dari kanan maupun kiri nya agar antara logo dan menu ada jarak */
+    justify-content: space-between;
+    /* align items center digunakan untuk agar posisinya bisa di tengah navbar nya secara vertikal */
+    align-items: center;
+    /* untuk mengatur jarak di navigation */
+    padding: 15px 40px;
+    /* untuk warna background navbar nya */
+    background: black;
+    /* untuk color text logo nya */
+    color: white;
+}
+
+/* bagian text menu navbar */
+nav ul {
+    /* agar titik list nya hilang */
+    list-style: none;
+    /* agar posisi text nya horizontal */
+    display: flex;
+    /* untuk jarak antar menu */
+    gap: 40px;
+}
+
+nav a {
+    /*  */
+    color: white;
+    /* untuk menghilangkan hyper link */
+    text-decoration: none;
+}
+
+/* disini kita kalau mau memanggil class kita harus menggunakan titik */
+.hero {
+    height: 90vh;
+    /* untuk  membuat background gradasi */
+    background: linear-gradient(135deg, rgb(156, 153, 148), rgb(241, 234, 226));
+    color: white;
+    display: flex;
+    /* agar text nya menyusun ke bawah */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}   
+
+/* hero span itu untuk kaya tulisan yang di bagian span  */
+.hero span {
+    color:  black;
+}
+
+.hero button {
+    /* agar jarak antara judul dan button lebih berjarak aja */
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    /* ini fungsinya agar ketika kursor kita mengarah ke bagian button, maka cursor nya akan berubah dan memberitahu kalau button nya bisa di pencet */
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* fungsi class umum untuk semua section */
+.section {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* bagian judul yang berukuran h2 */
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.088);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+button {
+    background: black;
+    background: linear-gradient(135deg, rgb(66, 64, 62), rgb(152, 145, 139));
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+/* untuk mengubah style pesan yang muncul di saat telah selesai submit */
+.message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+
+/* ini fungsi nya agar ketika kita pencet menu navbar nya itu dia berpindah dengan melakukan scroll yang smooth , kaya ada animasi nya */
+html {
+    scroll-behavior: smooth;
+}

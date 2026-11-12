@@ -1,0 +1,9 @@
+placeholder= itu kaya tempat menginpput dengan memasukan tulisan di dalam nya kaya "masukan nama".
+
+required= itu supaya kalau inputan nya tidak di isi dia akan eror jadi kita diminta untuk mengisi inputan nya.
+
+<p id="message"></p>= untuk memberitahu ke javascript kalau button nya sudah di kirim, dan js akan mengecek kalau
+ submit nya sudah selesai maka nanti bakalan di tampilkan pesan bahwa form nya sudah di submit
+
+ &copy= untuk bagian footer yang tanda khusus
+
